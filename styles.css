@@ -1,0 +1,219 @@
+/* css for the tips page */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FDFBF8;
+}
+
+/* everything for the navbar */
+.topnav {
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: DM sans, serif;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.topnav a.active {
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* to make navbar responsive*/
+@media screen and (max-width: 670px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: left;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* for the header at the top of the page */
+
+.toptext{
+    text-align: center;
+    width: 90%;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background-color: #A39081;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.toptext h2{
+    font-size: 24px;
+    font-family: Inter, sans serif;
+    color: white;
+}
+
+.toptext p{
+    font-size: 16px;
+    font-family: DM sans, serif;
+    color: white;
+}
+
+/*responsive*/
+@media screen and (max-width: 600px){
+    .toptext h2{
+        font-size: 20px;
+    }
+    .toptext p{
+        font-size: 14px;
+    }
+}
+
+/* for the tips */
+
+.tips{
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    margin: 50px
+}
+
+.tipbox h3{
+    font-size: 24px;
+    color: black;
+    font-family: Inter, sans serif;
+}
+
+.tipbox p{
+    font-size: 16px;
+    color: black;
+    font-family: DM sans, serif;
+}
+
+.tipbox{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 18px;
+    padding-left: 52px;
+    padding-right: 52px;
+    max-width: 600px;
+    max-height: 250px;
+}
+
+.tips img{
+    max-height: 250px;
+    width: auto;
+    display: block;
+}
+.picture{
+    display: block;
+}
+
+/*for the shadows*/
+.tipbox.tip1{
+    -webkit-box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+    -moz-box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+    box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+}
+.tipbox.tip2{
+    -webkit-box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+    -moz-box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+    box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+}
+.tipbox.tip3{
+    -webkit-box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+    -moz-box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+    box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+}
+.tipbox.tip4{
+    -webkit-box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+    -moz-box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+    box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+}
+.tipbox.tip5{
+    -webkit-box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+    -moz-box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+    box-shadow: 112px 117px 0px -74px rgba(194,174,159,1);
+}
+.tipbox.tip6{
+    -webkit-box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+    -moz-box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+    box-shadow: -112px 117px 0px -74px rgba(194,174,159,1);
+}
+
+
+/*for footer*/
+
+footer{
+    font-size: 16px;
+    color: black;
+    font-family: Inter, serif;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+/*for responsiveness*/
+
+@media screen and (max-width: 1035px){
+    /*.tips img{*/
+    /*    max-height: 200px;*/
+    /*    width: auto;*/
+    /*}*/
+
+    .tipbox h3{
+        font-size: 20px;
+    }
+    .tipbox p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 850px){
+
+    .tipbox{
+        max-width: 400px;
+        max-height:450px
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .picture{
+        display: none;
+    }
+
+    .tips{
+        flex-direction: column;
+        gap: 20px
+    }
+}

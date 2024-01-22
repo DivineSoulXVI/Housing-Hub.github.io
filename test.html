@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(rgb(253, 250, 242), rgb(253, 250, 242)) 0% 0% / 100% 70%, linear-gradient(rgb(163, 144, 129), rgb(163, 144, 129)) 0% 100% / 100% 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-direction: row; /* Updated to arrange items horizontally */
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      justify-content: space-between;
+    }
+
+    img {
+      margin-top: 90px;
+      height: 150px;
+      width: 150px;
+      margin-left: 50px; /* Added margin to separate image from other elements */
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      width: 400px;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-info {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/friendly-housing.png" alt="Contact Image">
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="contact-info">
+    <h2>Contact Information</h2>
+    <!-- Your contact information goes here -->
+    <p>Email: contact@example.com</p>
+    <p>Phone: +1 123-456-7890</p>
+    <p>Address: 123 Main Street, City, Country</p>
+  </div>
+</div>
+
+</body>
+</html>
